@@ -2,7 +2,7 @@
 
 /*set your website title*/
 
-define('WEBSITE_TITLE', "My Website");
+define('WEBSITE_TITLE', "MVC from Scratch");
 
 /*set database variables*/
 
@@ -13,7 +13,7 @@ define('DB_PASS','');
 define('DB_HOST','localhost');
 
 /*protocal type http or https*/
-define('PROTOCAL','https');
+define('PROTOCAL','http');
 
 /*root and asset paths*/
 
