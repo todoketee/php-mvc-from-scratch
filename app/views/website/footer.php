@@ -47,7 +47,7 @@
         <section class="padding background-dark full-width">
           <div class="text-center">
             <p class="text-size-12">Copyright 2019, Vision Design - graphic zoo</p>
-            <p class="text-size-12">All images is purchased from Bigstock. Do not use the images in your website.</p>
+            <p class="text-size-12">All images have already been replaced by free license images.</p>
           </div>
         </section>
       </footer>
