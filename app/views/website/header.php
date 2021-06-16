@@ -22,8 +22,6 @@
   </head>
 
   <body class="size-1140">
-  	<!-- PREMIUM FEATURES BUTTON -->
-  	<a target="_blank" class="hide-s" href="../template/minimalista-premium-responsive-business-template/" style="position:fixed;top:120px;right:-14px;z-index:10;"><img src="<?=ASSETS?>website/img/premium-features.png" alt=""></a>
     <div id="page-wrapper">
       <!-- HEADER -->
       <header role="banner" class="position-absolute margin-top-30 margin-m-top-0 margin-s-top-0">    
@@ -41,12 +39,19 @@
             <div class="top-nav right">
               <p class="nav-text"></p>
               <ul class="right chevron">
+              <?php if(isset($_SESSION['user_name'])): ?>
+                <li><a href="<?=ROOT?>home">Hello <?=$_SESSION['user_name'] ?>!</a></li>
+              <?php endif; ?>
                 <li><a href="<?=ROOT?>home">Home</a></li>
                 <li><a href="<?=ROOT?>about">About Us</a></li>             
                 <li><a href="<?=ROOT?>contact">Contact</a></li>
-                <li><a href="<?=ROOT?>upload">Upload</a></li>
+              <?php if(!isset($_SESSION['user_name'])): ?>
                 <li><a href="<?=ROOT?>login">Login</a></li>
-                <li><a href="<?=ROOT?>signup">Sign Up</a></li>
+                <li><a href="<?=ROOT?>signup">Signup</a></li>
+              <?php else: ?>
+                <li><a href="<?=ROOT?>upload">Upload</a></li>
+                <li><a href="<?=ROOT?>logout">Logout</a></li>
+              <?php endif; ?>
               </ul>
             </div>
           </div>  

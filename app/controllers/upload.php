@@ -4,7 +4,7 @@ Class Upload extends Controller{
 
     function index(){
 
-        header("Location:" . ROOT . "login");
+        header("Location:" . ROOT . "upload/image");
         die;
         
     }

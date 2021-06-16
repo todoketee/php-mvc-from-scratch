@@ -54,7 +54,7 @@ Class User {
             $query = "insert into users (username, password, email, url_address, date) values (:username, :password, :email, :url_address, :date)";
             $data = $DB->write($query, $arr);
 
-            if(is_array($data)){
+            if($data){
 
                 header("Location:" . ROOT . "login");
                 die;
@@ -83,7 +83,6 @@ Class User {
             if(is_array($data)){
 
                 //logged in
-                $_SESSION['user_id'] = $data[0]->userid;
                 $_SESSION['user_name'] = $data[0]->username;
                 $_SESSION['user_url'] = $data[0]->url_address;
 
@@ -94,6 +93,17 @@ Class User {
         }
 
         return false;
+
+    }
+
+    function logout(){
+
+        //logged in
+        unset($_SESSION['user_name']);
+        unset($_SESSION['user_url']);
+
+        header("Location:" . ROOT . "login");
+        die;
 
     }
 
