@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="<?=ASSETS?>website/css/template-style.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,900&subset=latin-ext" rel="stylesheet"> 
     <script type="text/javascript" src="<?=ASSETS?>website/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="<?=ASSETS?>website/js/jquery-ui.min.js"></script>      
+    <script type="text/javascript" src="<?=ASSETS?>website/js/jquery-ui.min.js"></script>  
+
+
+    <link rel="stylesheet" href="<?=ASSETS?>website/css/style.css">    
+
   </head>
 
   <body class="size-1140">
