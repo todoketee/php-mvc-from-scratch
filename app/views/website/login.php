@@ -36,6 +36,7 @@
                             </div>
                         </div>
                     </form>
+                    <div class="form-group row mb-0 col-md-8 offset-md-4" style="color: red;"><?php check_message() ?></div>
                 </div>
             </div>
         </div>
