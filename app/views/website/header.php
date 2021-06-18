@@ -49,7 +49,6 @@
                 <li><a href="<?=ROOT?>login">Login</a></li>
                 <li><a href="<?=ROOT?>signup">Sign up</a></li>
               <?php else: ?>
-                <li><a href="<?=ROOT?>upload">Upload</a></li>
                 <li><a href="<?=ROOT?>logout">Logout</a></li>
               <?php endif; ?>
               </ul>
