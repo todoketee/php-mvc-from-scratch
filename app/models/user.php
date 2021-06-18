@@ -1,6 +1,6 @@
 <?php
 
-Class User {
+Class User{
 
     function login($POST){
 

@@ -3,7 +3,7 @@
         <section class="section background-white">
             <div class="s-12 m-12 l-4 center">
               <h4 class="text-size-20 margin-bottom-20 text-dark text-center">Upload Image</h4>
-              <form name="contactForm" class="customform" method="post">
+              <form method="post" name="contactForm" enctype="multipart/form-data" class="customform" >
                 <div class="s-12"> 
                   <input name="title" class="subject" placeholder="Title" title="Title" type="text" required>
                   <p class="subject-error form-error">Please enter the title.</p>
@@ -18,6 +18,7 @@
                 </div>
                 <div class="s-12"><button class="s-12 submit-form button background-primary text-white" type="submit">Submit Button</button></div>
               </form>
+              <div class="form-group row mb-0 col-md-8 offset-md-4" style="color: red;"><?php check_message() ?></div>
             </div>           
           </section> 
 

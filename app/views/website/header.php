@@ -40,14 +40,14 @@
               <p class="nav-text"></p>
               <ul class="right chevron">
               <?php if(isset($_SESSION['user_name'])): ?>
-                <li><a href="<?=ROOT?>home">Hello <?=$_SESSION['user_name'] ?>!</a></li>
+                <li><a href="<?=ROOT?>home"><strong>Hello <?=$_SESSION['user_name'] ?>!</strong></a></li>
               <?php endif; ?>
                 <li><a href="<?=ROOT?>home">Home</a></li>
                 <li><a href="<?=ROOT?>about">About Us</a></li>             
                 <li><a href="<?=ROOT?>contact">Contact</a></li>
               <?php if(!isset($_SESSION['user_name'])): ?>
                 <li><a href="<?=ROOT?>login">Login</a></li>
-                <li><a href="<?=ROOT?>signup">Signup</a></li>
+                <li><a href="<?=ROOT?>signup">Sign up</a></li>
               <?php else: ?>
                 <li><a href="<?=ROOT?>upload">Upload</a></li>
                 <li><a href="<?=ROOT?>logout">Logout</a></li>
